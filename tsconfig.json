@@ -1,11 +1,12 @@
 {
-  "include": ["src/**/*"],
+  "include": ["src/index.ts", "src/on-create-node.ts", "src/utils.ts"],
   "compilerOptions": {
     "target": "es6",
     "module": "commonjs",
     "noImplicitAny": false,
     "moduleResolution": "node",
     "strict": true,
+    "skipLibCheck": true,
     "esModuleInterop": true,
     "allowSyntheticDefaultImports": true,
     "outDir": "dist"
