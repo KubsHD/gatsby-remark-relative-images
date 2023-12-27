@@ -34,7 +34,7 @@ export const onCreateNode = (
       if (!isString(value)) return;
       if (!path.isAbsolute(value) || !path.extname(value)) return;
 
-      const paths = this.path.reduce<string[]>((acc, current) => {
+      const paths = this.path.reduce((acc: string[], current: string) => {
         acc.push(acc.length > 0 ? [acc, current].join('.') : current);
         return acc;
       }, []);
